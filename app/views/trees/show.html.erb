@@ -1,0 +1,17 @@
+<div class="tree-detail">
+  <% if notice.present? %>
+    <p class="notice notice-success"><%= notice %></p>
+  <% end %>
+
+  <h1><%= @tree.name %></h1>
+
+  <%= render @tree %>
+
+  <% if user_signed_in? && current_user.id == @tree.user_id %>
+    <div class="actions">
+      <%= link_to "Edit this tree", edit_tree_path(@tree), class: "btn btn-secondary" %>
+      <%= link_to "Back to trees", trees_path, class: "btn-link" %>
+      <%= button_to "Delete this tree", @tree, method: :delete, class: "btn btn-danger", form: { style: 'display: inline-block;', data: { turbo_confirm: 'Are you sure?' } } %>
+    </div>
+  <% end %>
+</div>

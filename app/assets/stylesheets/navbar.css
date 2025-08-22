@@ -1,0 +1,157 @@
+/* Navbar Styles - Elegant and Classy Design */
+body{
+    margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 12px 5%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Georgia', serif;
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from the logo link */
+}
+
+.logo-image {
+  width: 45px;
+  height: auto;
+  margin-right: 12px;
+  filter: brightness(1.1); /* Makes the logo slightly brighter */
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #f8f8f8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+/* Create an elegant line under the logo text */
+.logo-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #a67c52, transparent);
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-weight: 400;
+  padding: 8px 16px;
+  letter-spacing: 0.7px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Elegant hover effect with underline */
+.nav-link:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background-color: #a67c52;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+/* Special styling for signup, login, and logout buttons */
+.signup-link {
+  background-color: #a67c52; /* Gold/bronze color */
+  color: white;
+  border-radius: 3px;
+}
+
+.signup-link:hover {
+  background-color: #8e6943;
+  color: white;
+}
+
+.signup-link::after {
+  display: none; /* Remove the underline effect */
+}
+
+.login-link {
+  border: 1px solid #a67c52;
+  color: #a67c52;
+  border-radius: 3px;
+}
+
+.login-link:hover {
+  background-color: rgba(166, 124, 82, 0.1);
+  color: #a67c52;
+}
+
+.login-link::after {
+  display: none; /* Remove the underline effect */
+}
+
+.logout-link {
+  border: 1px solid #8b4747;
+  color: #8b4747;
+  border-radius: 3px;
+}
+
+.logout-link:hover {
+  background-color: rgba(139, 71, 71, 0.1);
+  color: #8b4747;
+}
+
+.logout-link::after {
+  display: none; /* Remove the underline effect */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+  }
+}

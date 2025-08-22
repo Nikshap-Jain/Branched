@@ -1,0 +1,47 @@
+<div class="tree-form">
+  <%= form_with(model: tree) do |form| %>
+    <% if tree.errors.any? %>
+      <div class="error-messages">
+        <h2><%= pluralize(tree.errors.count, "error") %> prohibited this tree from being saved:</h2>
+        <ul>
+          <% tree.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :instagram %>
+      <%= form.text_field :instagram, placeholder: "Your Instagram username" %>
+    </div>
+
+    <div class="field">
+      <%= form.label :youtube %>
+      <%= form.text_field :youtube, placeholder: "Your YouTube channel" %>
+    </div>
+
+    <div class="field">
+      <%= form.label :x %>
+      <%= form.text_field :x, placeholder: "Your X/Twitter username" %>
+    </div>
+
+    <% if current_user %>
+      <%= form.hidden_field :user_id, value: current_user.id %>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :style %>
+      <%= form.select :style, ["Default", "Dark", "Light", "Colorful"], prompt: "Choose a style" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit class: "btn" %>
+    </div>
+  <% end %>
+</div>

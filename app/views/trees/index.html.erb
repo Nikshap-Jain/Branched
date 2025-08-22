@@ -1,0 +1,22 @@
+<div class="trees-container">
+  <% if notice.present? %>
+    <p class="notice notice-success"><%= notice %></p>
+  <% end %>
+
+  <h1>Your Trees</h1>
+
+  <div class="tree-list">
+    <% @trees.each do |tree| %>
+      <div class="tree-item">
+        <%= render tree %>
+        <div class="tree-actions">
+          <%= link_to "Show this tree", tree, class: "btn-link" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= link_to "New tree", new_tree_path, class: "btn" %>
+  </div>
+</div>

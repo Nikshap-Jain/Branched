@@ -1,0 +1,44 @@
+<%= stylesheet_link_tag "home" %>
+
+<div class="home-container">
+  <div class="hero-section">
+    <h1>Welcome to <span class="brand-name">Branched</span></h1>
+    <p class="tagline">One link to connect them all</p>
+    
+    <% if user_signed_in? %>
+      <div class="cta-buttons">
+        <%= link_to "View All Trees", trees_path, class: "btn primary-btn" %>
+        <%= link_to "Create New Tree", new_tree_path, class: "btn secondary-btn" %>
+      </div>
+    <% else %>
+      <div class="cta-buttons">
+        <%= link_to "Get Started", new_user_registration_path, class: "btn primary-btn" %>
+        <%= link_to "Learn More", "#features", class: "btn secondary-btn" %>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="features-section" id="features">
+    <h2>Share All Your Links In One Place</h2>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🔗</div>
+        <h3>One Link for Everything</h3>
+        <p>Share your Instagram, YouTube, X and more with just one link.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Customizable Design</h3>
+        <p>Choose from multiple styles to match your personal brand.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Works Everywhere</h3>
+        <p>Looks great on mobile, tablet, and desktop devices.</p>
+      </div>
+    </div>
+  </div>
+</div>

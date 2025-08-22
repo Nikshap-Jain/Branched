@@ -1,0 +1,39 @@
+<div id="<%= dom_id tree %>" class="tree-card">
+  <h2><%= tree.name %></h2>
+  
+  <div class="tree-links">
+    <% if tree.instagram.present? %>
+      <div class="tree-link">
+        <span class="tree-link-label">Instagram:</span>
+        <span><%= tree.instagram %></span>
+      </div>
+    <% end %>
+    
+    <% if tree.youtube.present? %>
+      <div class="tree-link">
+        <span class="tree-link-label">YouTube:</span>
+        <span><%= tree.youtube %></span>
+      </div>
+    <% end %>
+    
+    <% if tree.x.present? %>
+      <div class="tree-link">
+        <span class="tree-link-label">X:</span>
+        <span><%= tree.x %></span>
+      </div>
+    <% end %>
+  </div>
+  
+  <% if user_signed_in? && current_user.id == tree.user_id %>
+    <div class="tree-meta">
+      <div class="tree-link">
+        <span class="tree-link-label">User ID:</span>
+        <span><%= tree.user_id %></span>
+      </div>
+      <div class="tree-link">
+        <span class="tree-link-label">Style:</span>
+        <span><%= tree.style %></span>
+      </div>
+    </div>
+  <% end %>
+</div>

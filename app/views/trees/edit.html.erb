@@ -1,0 +1,10 @@
+<div class="trees-container">
+  <h1>Edit Your Tree</h1>
+  
+  <%= render "form", tree: @tree %>
+
+  <div class="actions" style="margin-top: 1rem;">
+    <%= link_to "View this tree", @tree, class: "btn-link" %> |
+    <%= link_to "Back to trees", trees_path, class: "btn-link" %>
+  </div>
+</div>
