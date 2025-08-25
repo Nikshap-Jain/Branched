@@ -210,16 +210,13 @@ rails test:system
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
 **Nikshap Jain**
 
 - GitHub: [@Nikshap-Jain](https://github.com/Nikshap-Jain)
-- Email: nikshapjain12@gmail.com
+- Email: nikshapjain@gmail.com
 
 ## 🙏 Acknowledgments
 
