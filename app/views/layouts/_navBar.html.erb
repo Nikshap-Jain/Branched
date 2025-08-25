@@ -12,6 +12,7 @@
       <%= link_to "My Trees", trees_path, class: "nav-link" %>
       <%= link_to "New Tree", new_tree_path, class: "nav-link" %>
       <%= link_to "Log out", "/users/sign_out", class: "nav-link logout-link" %>
+      <%= link_to "My account", edit_user_registration_path, class: "nav-link"%>
     <% else %>
       <%= link_to "Sign up", new_user_registration_path, class: "nav-link signup-link" %>
       <%= link_to "Log in", new_user_session_path, class: "nav-link login-link" %>
