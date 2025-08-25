@@ -1,0 +1,202 @@
+<%= stylesheet_link_tag "pricing" %>
+
+<div class="pricing-container">
+  <div class="pricing-header">
+    <h1>Choose Your <span class="brand-accent">Plan</span></h1>
+    <p class="pricing-subtitle">Select the perfect plan for your needs</p>
+  </div>
+
+  <div class="pricing-toggle">
+    <span class="toggle-option active">Monthly</span>
+    <label class="switch">
+      <input type="checkbox" id="billing-toggle">
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-option">Yearly <span class="discount-badge">Save 20%</span></span>
+  </div>
+
+  <div class="pricing-cards">
+    <!-- Free Plan -->
+    <div class="pricing-card">
+      <div class="card-header">
+        <h3>Free</h3>
+        <div class="price-container">
+          <div class="price monthly-price">
+            <span class="currency">₹</span>0
+            <span class="period">/month</span>
+          </div>
+          <div class="price yearly-price" style="display: none;">
+            <span class="currency">₹</span>0
+            <span class="period">/year</span>
+          </div>
+        </div>
+        <p class="price-description">Perfect for trying out Branched</p>
+      </div>
+      <div class="card-features">
+        <ul>
+          <li><i class="feature-check">✓</i> 1 Tree</li>
+          <li><i class="feature-check">✓</i> Basic Styling</li>
+          <li><i class="feature-check">✓</i> Up to 5 links</li>
+          <li><i class="feature-check">✓</i> Branched branding</li>
+          <li><i class="feature-cross">✗</i> Analytics</li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="#" class="btn-card">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="pricing-card featured">
+      <div class="popular-tag">Most Popular</div>
+      <div class="card-header">
+        <h3>Pro</h3>
+        <div class="price-container">
+          <div class="price monthly-price">
+            <span class="currency">₹</span>299
+            <span class="period">/month</span>
+          </div>
+          <div class="price yearly-price" style="display: none;">
+            <span class="currency">₹</span>2,868
+            <span class="period">/year</span>
+          </div>
+        </div>
+        <p class="price-description">Everything you need for personal use</p>
+      </div>
+      <div class="card-features">
+        <ul>
+          <li><i class="feature-check">✓</i> 5 Trees</li>
+          <li><i class="feature-check">✓</i> Premium Themes</li>
+          <li><i class="feature-check">✓</i> Unlimited links</li>
+          <li><i class="feature-check">✓</i> Remove Branched branding</li>
+          <li><i class="feature-check">✓</i> Basic Analytics</li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="#" class="btn-card featured">Choose Pro</a>
+      </div>
+    </div>
+
+    <!-- Business Plan -->
+    <div class="pricing-card">
+      <div class="card-header">
+        <h3>Business</h3>
+        <div class="price-container">
+          <div class="price monthly-price">
+            <span class="currency">₹</span>999
+            <span class="period">/month</span>
+          </div>
+          <div class="price yearly-price" style="display: none;">
+            <span class="currency">₹</span>9,590
+            <span class="period">/year</span>
+          </div>
+        </div>
+        <p class="price-description">For businesses and professionals</p>
+      </div>
+      <div class="card-features">
+        <ul>
+          <li><i class="feature-check">✓</i> Unlimited Trees</li>
+          <li><i class="feature-check">✓</i> Custom Branding</li>
+          <li><i class="feature-check">✓</i> Unlimited Links</li>
+          <li><i class="feature-check">✓</i> Priority Support</li>
+          <li><i class="feature-check">✓</i> Advanced Analytics</li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="#" class="btn-card">Choose Business</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-faq">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Can I change my plan later?</h4>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, you can upgrade or downgrade your plan at any time. If you upgrade, the new pricing takes effect immediately. If you downgrade, the new pricing takes effect at the end of your billing cycle.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you offer refunds?</h4>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We offer a 14-day money-back guarantee for all paid plans. If you're not satisfied with our service, please contact our support team within 14 days of your purchase.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>What payment methods do you accept?</h4>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We accept all major credit cards, UPI, NetBanking, and selected digital wallets.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Is there a contract or can I cancel anytime?</h4>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>There's no long-term contract. You can cancel your subscription at any time, and your plan will remain active until the end of the current billing cycle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-cta">
+    <h2>Still have questions?</h2>
+    <p>Our team is here to help you choose the right plan for your needs.</p>
+    <a href="#" class="btn contact-btn">Contact Support</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Toggle between monthly and yearly pricing
+    const billingToggle = document.getElementById('billing-toggle');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const yearlyPrices = document.querySelectorAll('.yearly-price');
+    const toggleOptions = document.querySelectorAll('.toggle-option');
+    
+    billingToggle.addEventListener('change', function() {
+      monthlyPrices.forEach(el => el.style.display = this.checked ? 'none' : 'block');
+      yearlyPrices.forEach(el => el.style.display = this.checked ? 'block' : 'none');
+      toggleOptions[0].classList.toggle('active', !this.checked);
+      toggleOptions[1].classList.toggle('active', this.checked);
+    });
+
+    // Handle FAQ accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        
+        // Close all FAQs
+        faqItems.forEach(faq => {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-icon').textContent = '+';
+        });
+        
+        // Open clicked FAQ if it wasn't already open
+        if (!isOpen) {
+          item.classList.add('active');
+          item.querySelector('.faq-icon').textContent = '−';
+        }
+      });
+    });
+  });
+</script>
